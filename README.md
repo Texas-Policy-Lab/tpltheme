@@ -9,7 +9,7 @@ if (!require('devtools')) install.packages('devtools')
 library(ggplot2)
 library(tidyverse)
 
-devtools::install_github("connorrothschild/tpltheme")
+devtools::install_github("Texas-Policy-Lab/tpltheme")
 library(tpltheme)
 ```
 
@@ -79,7 +79,7 @@ By specifying `style = "Texas"` within `set_tpl_theme`, the user may
 also create Texas-specific plots.
 
 ``` r
-tx_vac <- readr::read_csv("https://raw.githubusercontent.com/connorrothschild/tpltheme/master/data/tx_vac_example.csv")
+tx_vac <- readr::read_csv("https://raw.githubusercontent.com/Texas-Policy-Lab/tpltheme/master/data/tx_vac_example.csv")
 set_tpl_theme(style = "Texas", font = "adobe")
 
 ggplot(data = tx_vac, mapping = aes(x = long, y = lat, group = group, fill = avgvac*100)) +
